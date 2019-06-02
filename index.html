@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        html, body {
+            font-family: Roboto, sans-serif;
+        }
+
+        :root {
+            --primary-color1: #f8f1b5;
+            --primary-color2: #426e86;
+            --secondary-color1: #011A27;
+            --secondary-color2: #fff;
+            --success-color: #058e3f;
+            --danger-color: #931621;
+            --accent-color: #e6af2e;
+        }
+
+        .centre {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .label {
+            width: 70%;
+            margin-top: -60px;
+            margin-bottom: -20px;
+        }
+
+        .qr {
+            position: absolute;
+            bottom: 145px;
+            right: 0;
+        }
+
+        .qr_line {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: -20px;
+            right: 0;
+            /*text-decoration: none;*/
+            text-underline: none;
+        }
+
+        .cover {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .perfect-center {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .main-title {
+            margin-top: 0;
+            font-size: 110px;
+            color: var(--primary-color2);
+        }
+
+        .main-title2{
+            margin-top: -40px;
+            margin-left: 20px;
+            font-size: 80px;
+            color: var(--primary-color2);
+        }
+
+        .slide {
+            background-color: var(--primary-color1);
+        }
+
+        .no-padding {
+            padding: 40px 60px 40px 40px;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .big_qrcode {
+            width: 400px;
+            height: 400px;
+        }
+
+        .link_big {
+            margin-left: 10px;
+            text-decoration: none !important;
+            font-size: 60px;
+        }
+
+        .show {
+            opacity: 1 !important;
+        }
+
+        .gopher {
+            top: 100px;
+            left: 100px;
+        }
+
+        .play {
+            left: -220%;
+            position: absolute;
+            font-size: 50px;
+            top: 60px;
+        }
+
+        .image {
+            width: 90%;
+        }
+
+        .gopher_presentation {
+            position: absolute;
+            top: 33%;
+            left: 70px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body class="shower list">
+
+<header class="caption">
+    <h1>Sleepless Nights</h1>
+</header>
+<section class="slide perfect-center" id="cover">
+    <h1 class="main-title">Sleepless Nights</h1>
+</section>
+<section class="slide no-padding">
+    <div>
+        <div class="container w100 justify-content-center" id="container_3eoau3poo" data-href="">
+            <div class="avatar justify-content-center align-items-center ">
+                <img src="pictures/mentor.jpg" id="avatar_j9v8zsj5u" alt="avatar" class="avatar__upload-icon">
+            </div>
+            <div class="container container_column justify-content-center pl-10px">
+                <h1>Ксения Казанцева</h1>
+                <h3>Dear Mentor</h3>
+            </div>
+        </div>
+        <div class="container w49 developer container__inline-flex" id="container_zxlesco88" data-href="">
+            <div class="avatar justify-content-center align-items-center ">
+                <img src="./pictures/maksP.jpg" id="avatar_e1u86u5a9" alt="avatar" class="avatar__upload-icon">
+            </div>
+            <div class="container container_column justify-content-center pl-10px">
+                <h1>Максим Пирмамедов</h1>
+                <h3>Backend</h3>
+            </div>
+        </div>
+        <div class="container w49 developer container__inline-flex" id="container_36kjgo2po" data-href="">
+
+            <div class="avatar justify-content-center align-items-center ">
+                <img src="./pictures/lesha.jpg"  id="avatar_40mybkv7p" alt="avatar" class="avatar__upload-icon">
+            </div>
+            <div class="container container_column justify-content-center pl-10px">
+                <h1>Алексей Ларютин</h1>
+                <h3>Backend</h3>
+            </div>
+        </div>
+        <div class="container w49 developer container__inline-flex" id="container_q3qah60ff" data-href="">
+            <div class="avatar justify-content-center align-items-center ">
+                <img src="./pictures/maksU.jpg" id="avatar_kv69xprdn" alt="avatar" class="avatar__upload-icon">
+            </div>
+            <div class="container container_column justify-content-center pl-10px">
+                <h1>Максим Уймин</h1>
+                <h3>Full-stack</h3>
+            </div>
+        </div>
+        <div class="container w49 developer container__inline-flex" id="container_7nvtcinob" data-href="">
+            <div class="avatar justify-content-center align-items-center ">
+                <img src="./pictures/jahongir.jpg" id="avatar_wr9kiqgc8" alt="avatar" class="avatar__upload-icon">
+            </div>
+            <div class="container container_column justify-content-center pl-10px">
+                <h1>Джахонгир Тулфоров</h1>
+                <h3>Frontend</h3>
+            </div>
+        </div>
+    </div>
+    <div class="qr">
+        <a href="http://qrcoder.ru" target="_blank"><img src="http://qrcoder.ru/code/?https%3A%2F%2Ftechno-quiz.com%2F&4&0" width="132" height="132" border="0" title="QR код"></a>
+    </div>
+</section>
+
+<section class="slide container justify-content-center align-items-center no-padding">
+    <a href="http://qrcoder.ru" target="_blank"><img class="big_qrcode" src="http://qrcoder.ru/code/?https%3A%2F%2Ftechno-quiz.com%2F&4&0" width="132" height="132" border="0" title="QR код"></a>
+    <a class="link link_big link_primary" target="_blank" href="https://techno-quiz.com/">https://techno-quiz.com/</a>
+</section>
+
+<section class="slide container container_column justify-content-center align-items-center no-padding">
+    <h2>Как у нас было в предзащиты</h2>
+    <img class="image" src="./pictures/image1.jpg" >
+</section>
+
+<section class="slide container container_column justify-content-center align-items-center no-padding">
+    <h2>Что мы добавили</h2>
+    <ul>
+        <li>Гофер</li>
+        <li>Мультиплеер</li>
+        <li>Выбор паков</li>
+        <li>Анимации</li>
+    </ul>
+    <img class="gopher_presentation" src="./pictures/gopher-front.svg">
+</section>
+
+<section class="slide container container_column justify-content-center align-items-center no-padding">
+    <h2>Как у нас получилось</h2>
+    <img class="image" src="./pictures/image2.png" >
+</section>
+
+<section class="slide container justify-content-center align-items-center no-padding">
+    <div class="gopher anim-coming" id="gopher_ee68trfze">
+        <img src="./pictures/gopher.svg" alt="" class="gopher__img">
+        <canvas class="gopher__eyes" width="80" height="70"></canvas>
+        <a class="play" href="https://techno-quiz.com/singleplayer">Играть<a>
+            <div class="oval justify-content-center align-items-center oval__speech " id="oval_62pscjs2q" style="opacity: 1;">
+                <p id="quote2" class="oval__text oval__speech__text"></p>
+            </div>
+    </div>
+</section>
+
+<section class="slide perfect-center">
+    <h1 class="main-title2">Спасибо за внимание</h1>
+</section>
+
+<script>
+    const text = "Приветь дружок. Походу ты у нас впервые. хочешь со мной поиграть ?";
+    const text2 = "Всем привет. Кто хочет со мной поиграть ?";
+    const quote = document.getElementById('quote');
+    const quote2 = document.getElementById('quote2');
+
+    setTimeout(() => {
+        document.getElementById('oval_62pscjs2q').classList.add('show');
+    }, 500);
+
+    const gopher = document.getElementById('gopher_ee68trfze');
+    setTimeout(() => {
+        gopher.classList.remove('anim-coming');
+    }, 1000);
+
+    let interval = null;
+
+    gopher.onclick = () => {
+        gopher.classList.remove('anim-jumping');
+        const text = 'Чё ты меня бёшь ??? Не бей мне больно';
+        let j = 0;
+        quote2.innerHTML = '';
+        setTimeout(() => {
+            gopher.classList.add('anim-jumping');
+        }, 50);
+
+        if (interval) clearInterval(interval);
+        interval = setInterval(() => {
+            // quote.innerHTML += text[j];
+            quote2.innerHTML += text[j];
+            if (++j >= text.length) clearInterval(interval);
+        }, 70);
+    };
+
+    setTimeout(() => {
+        let j = 0;
+        interval = setInterval(() => {
+            // quote.innerHTML += text[j];
+            quote2.innerHTML += text2[j];
+            if (++j >= text2.length) clearInterval(interval);
+        }, 100);
+    }, 1200);
+</script>
+
+<script type="text/javascript">
+    function eye(ctx, positionX, positionY, radius) {
+        const pupilX = a * Math.cos(radius) + positionX,
+            pupilY = a * Math.sin(radius) + positionY;
+        ctx.beginPath();
+
+        ctx.arc(positionX, positionY, 14, 0, 2 * Math.PI);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        ctx.beginPath();
+        // pupil
+        ctx.arc(pupilX, pupilY, 5.5, 0, 2 * Math.PI);
+        ctx.fillStyle = 'black';
+        ctx.fill();
+    }
+
+    function drawEyes() {
+        const canvasRect = canvas.getBoundingClientRect(),
+            d = canvasRect.left + eyeLeftX,
+            p = canvasRect.left + eyeRightX,
+            h = canvasRect.top + eyesY,
+            ctx = canvas.getContext('2d');
+        // v.clearRect(0, 0, eyes.width, eyes.height);
+
+        const radius1 = Math.atan2(height - h, width - d);
+        eye(ctx, eyeLeftX, eyesY, radius1);
+
+        const radius2 = Math.atan2(height - h, width - p);
+        eye(ctx, eyeRightX, eyesY, radius2);
+
+        window.requestAnimationFrame(drawEyes);
+    }
+
+    const canvas = document.getElementsByTagName('canvas')[0];
+    let eyeLeftX = 22,
+        eyeRightX = 66,
+        eyesY = 35,
+        a = 8.5,
+        width = document.body.clientWidth / 2,
+        height = document.body.clientHeight / 2;
+
+    document.addEventListener('mousemove', (event) => {
+        width = event.clientX;
+        height = event.clientY;
+    });
+
+    window.requestAnimationFrame(drawEyes);
+
+    // https://www.creativeboom.com/
+    // https://codepen.io/J-Roel/pen/wWGNQN
+</script>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
